@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.general{
+    width: 1500px;
+    height: 730px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #FFD600;
+}
+
+.gauche{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    background: url(/TP_HTML/assets/images/photo_gauche_a_propos.jpeg);
+}
+
+.gauche img{
+    height: 100%;
+    width: 100%;
+}
+
+.milieu{
+    width: 20%;
+    height: 100%;
+    background-color: #FFD600;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.milieu:hover{
+    background-color: black;
+    color: white;
+}
+
+.logo{    
+    display: inline-block;
+    width: 142px;
+    height: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+
+h1{
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 90px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-top: 75%;
+    margin: 0 auto;
+}
+
+.droite{
+    width: 39%;
+    height: 100%;
+    background-color: black;
+    float: right;
+    text-align: center ;
+}
+
+p, ul{
+    color: white;
+}
+
+ul{
+    margin-bottom: 65px;
+}
+
+li{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.titre{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.titre2{
+    font-size: 45px;
+}
+
+hr{
+    width: 150px;
+}
+
+.quotation{
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+.presentation{
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+}
+
+button{
+    vertical-align: middle;
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    background: none;
+    color: white;
+    border-color: white;
+    padding: 10px;
+}
+
+button:hover{
+    color: #FFD600;
+    border-color: #FFD600;
+    cursor: pointer;
+}

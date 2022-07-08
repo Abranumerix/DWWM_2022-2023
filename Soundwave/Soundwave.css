@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #2F303A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* DEBUT HEADER*/
+header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloc-logo{  /* CONTIENT LOGO + H1 */
+    height: 100%;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 13%;
+}
+
+img{
+    padding-right: 10px;
+}
+
+.logo{
+    width: 2em;
+    height: 2em;
+}
+
+h1{
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.menu{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    width: 25%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+/* FIN HEADER*/
+
+/* BACKGROUND FEMME */
+figure{
+    display: flex;
+    height: 90%;
+    margin-left: 13%;
+    margin-top: 3.7%;
+}
+
+.femme-background{
+    height: 100%;
+}
+/* FIN BACKGROUND FEMME */
+
+main{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* TEXTE DROITE + BTN */
+.texte{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    justify-content: flex-end;
+}
+
+.texte a{
+    width: 250px;
+}
+
+.texte-1, .texte-2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.texte-1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.texte-2{
+    font-size: 25px;
+    font-weight:400;
+}
+/* FIN TEXTE DROITE */
+
+.btn{
+    font-size: 18px;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border-color: #1762A7;
+    color: white;
+    background-color: #1762A7;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* FIN BTN */
+
+
+/* RESPONSIVE POUR MOBILE */
+@media screen and (min-width:320px) and (max-width:480px) {
+
+
+    .bloc-logo{
+        width: auto;
+        font-size: 1em;
+        margin-left: 1.5em;
+    }
+
+    .menu{
+        width: auto;
+        font-size: .8em;
+    }
+
+    figure{
+        margin-left: 0%;
+    }
+
+    .femme-background{
+    width: 0;
+    height: 0;
+    }
+
+    .texte{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texte-1, .texte-2{
+        width: 80%;
+    }
+
+    .texte-1{
+        font-size: 1.9em;
+    }
+
+    .texte-2{
+        font-size: 1em;
+    }
+
+}

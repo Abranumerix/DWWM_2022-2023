@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.general{
+    width: 1500px;
+    height: 730px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #FFD600;
+}
+
+.gauche{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    background: url(/TP_HTML/assets/images/photo_gauche_accueil.jpeg);
+}
+
+.gauche:hover{
+    background-color: black;
+}
+
+.gauche img{
+    height: 100%;
+    width: 100%;
+}
+
+img:hover{
+    background-color: black;
+    opacity: 0.6;
+    content: 'Monster Beaf Burger';
+}
+
+.milieu{
+    width: 20%;
+    height: 100%;
+    background-color: #FFD600;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.logo{    
+    display: inline-block;
+    width: 142px;
+    height: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.milieu:hover{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 90px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-top: 75%;
+    margin: 0 auto;
+}
+
+.droite{
+    width: 39%;
+    height: 720px;
+    float: right;
+}
+
+.droite img{
+    height: 100%;
+    width: 100%;
+}
+
+.droite:hover{
+    background-color: black;
+    content: 'FISH MENU';
+}
+
