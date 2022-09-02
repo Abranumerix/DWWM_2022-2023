@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant SC', serif;
+    width: 70%;
+    margin: 0 auto;
+    background: url(/got_wallpaper2.jpg) center no-repeat fixed;
+    color:#ffffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+header{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: #00000075;
+    border-radius: 0 0 75px 75px;
+}
+
+header img{
+    width: 38%;
+}
+
+main{
+    margin-top: 10rem;
+}
+
+
+#character{
+    display: grid;
+    position: relative;
+    z-index: 1;
+    gap: 14rem;
+}
+
+.single-character{
+    border-radius: 35px;
+    width: 45vw;
+    /* background: linear-gradient(0deg, #000000 50%, #b1b1b1 85%); */
+    /* background: linear-gradient(90deg, #254f61 35%, #992a1b 65%); */
+    background: linear-gradient(90deg, #000000 10%, #aba2ab 50%, #000000 90%);
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* object-fit: contain; */
+}
+
+.single-character img{
+    max-height: 67vh;
+    width: 35vw;
+    float: initial;
+    border-radius: 0px 0px 25px 25px;
+}
+
+h3:hover{
+    color: gold;
+}
+
+/* img:hover{
+
+} */
