@@ -1,0 +1,12 @@
+fa-icon{
+    cursor: pointer;
+}
+
+.table{
+    background-color:whitesmoke;
+}
+
+.searchBar{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

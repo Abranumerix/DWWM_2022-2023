@@ -1,0 +1,45 @@
+<!-- Condition *ngIf pour afficher le bouton de chargement des départements -->
+<button *ngIf="!departementsIsLoaded" type="button" class="btn btn-primary mt-4" (click)="loadDepartements.emit()" >
+    Charger les départements
+</button>
+
+<!-- Balise ng-container permet de décaler le chargement | chargement de façon asynchrone dans le DOM -->
+<!-- Ici, se chargera qu'au déclenchement du button -->
+<ng-container *ngIf="departementsIsLoaded"> <!-- Va s'afficher à condition que les départements soient chargés -->
+
+<div class="searchBar">
+    <label for="search" class="form-label">Rechercher un département</label>
+    <input type="text" class="form-control" name="search" placeholder="Ex: Orne | 61" [(ngModel)]="search" autocomplete="off">
+</div>
+
+
+
+<table class="table"> <!-- Tableau -->
+    <thead> <!-- En-tête du tableau -->
+        <tr> <!-- Génère une ligne / tr = table-row -->
+            <!-- Génère une colone / th = table-head -->
+            <th scope="col">Nom</th>
+            <th scope="col">Code</th>
+            <th scope="col">Code Région</th>
+            <th scope="col">#</th>
+        </tr>
+    </thead>
+
+    <tbody> <!-- Corps du tableau -->
+        <tr *ngFor="let departement of getDepartements()">
+            <td>{{ departement.nom }}</td> <!-- Récupération d'une data de l'API -->
+            <td>{{ departement.code }}</td>
+            <td>{{ departement.codeRegion }}</td>
+            <td (click)="loadCommunes.emit(departement.code)"><fa-icon [icon]="faMagnifyingGlass"></fa-icon></td>
+        </tr>
+    </tbody>
+
+</table>
+
+<div class="page">
+    <pagination [totalItems]="getLength()" [(ngModel)]="currentPage" firstText="&laquo;" lastText="&raquo;" [boundaryLinks]="true" previousText="Précédent" nextText="Suivant"></pagination>
+</div>
+
+
+</ng-container>
+
