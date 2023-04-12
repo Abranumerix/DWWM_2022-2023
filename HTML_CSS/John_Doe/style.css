@@ -20,7 +20,7 @@ main {
   width: 100%;
   height: 720px;
   background-color: azure;
-  background: url(/images/Background1.jpg) center;
+  background-image: url(/images/Background1.jpg) center;
   background-size: cover;
 }
 
